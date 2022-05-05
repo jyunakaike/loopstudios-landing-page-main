@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | Loopstudios landing page</title>
+  <link rel="stylesheet" href="./styles.css">
+  <!-- <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style> -->
+</head>
+
+<body>
+  <header>
+    <div class="header-nav">
+      <img src="./images/logo.svg" alt="logo" />
+      <ul class="header-nav-list">
+        <li>About</li>
+        <li>Careers</li>
+        <li>Events</li>
+        <li>Products</li>
+        <li>Support</li>
+      </ul>
+
+      <i class="fa fa-bars" id="myBtn"></i>
+
+
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <!-- <p>Some text in the Modal..</p> -->
+          <ul class="modal-ul">
+            <li>About</li>
+            <li>Careers</li>
+            <li>Events</li>
+            <li>Products</li>
+            <li>Support</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="header-title">
+      <h1>IMMERSIVE <br /> EXPERIENCES <br /> THAT DELIVER</h1>
+    </div>
+  </header>
+
+  <section>
+    <main class="section-detail">
+      <img src="./images/mobile/image-interactive.jpg" alt="image-interactive">
+
+      <div class="section-detail-container">
+        <h1>THE LEADER IN INTERACTIVE VR</h1>
+        <p>
+          Founded in 2011, Loopstudios has been producing world-class virtual reality
+          projects for some of the best companies around the globe. Our award-winning
+          creations have transformed businesses through digital experiences that bind
+          to their brand.
+        </p>
+      </div>
+    </main>
+
+    <main class="section-creations">
+      <div class="section-creations-header">
+        <h2>OUR CREATIONS</h2>
+        <input class="SeeAll" type="button" value="SEE ALL" />
+      </div>
+
+      <div class="section-creations-grids">
+        <div class="grid-image-deep-earth">
+          <img class="image-desktop" src="./images/desktop/image-deep-earth.jpg" alt="Deep-earth">
+          <img class="image-mobile" src="./images/mobile/image-deep-earth.jpg" alt="Deep-earth">
+          <h2>DEEP EARTH </h2>
+        </div>
+        <div class="grid-image-night-arcade">
+          <img class="image-desktop" src="./images/desktop/image-night-arcade.jpg" alt="night-arcade">
+          <img class="image-mobile" src="./images/mobile/image-night-arcade.jpg" alt="night-arcade">
+          <h2>NIGHT ARCADE</h2>
+        </div>
+        <div class="grid-image-soccer-team-vr">
+          <img class="image-desktop" src="./images/desktop/image-soccer-team.jpg" alt="sorcer-team">
+          <img class="image-mobile" src="./images/mobile/image-soccer-team.jpg" alt="sorcer-team">
+          <h2>SOCCER TEAM VR</h2>
+        </div>
+        <div class="grid-image-the-grid">
+          <img class="image-desktop" src="./images/desktop/image-grid.jpg" alt="the-grid">
+          <img class="image-mobile" src="./images/mobile/image-grid.jpg" alt="the-grid">
+          <h2>THE GRID</h2>
+        </div>
+        <div class="grid-image-from-up">
+          <img class="image-desktop" src="./images/desktop/image-from-above.jpg" alt="from-above">
+          <img class="image-mobile" src="./images/mobile/image-from-above.jpg" alt="from-above">
+          <h2>FROM UP ABOVE VR</h2>
+        </div>
+        <div class="grid-image-pockect-borealis">
+          <img class="image-desktop" src="./images/desktop/image-pocket-borealis.jpg" alt="pocket-borealis">
+          <img class="image-mobile" src="./images/mobile/image-pocket-borealis.jpg" alt="pocket-borealis">
+          <h2>POCKET BOREALIS</h2>
+        </div>
+        <div class="grid-image-the-curiosity">
+          <img class="image-desktop" src="./images/desktop/image-curiosity.jpg" alt="curiosity">
+          <img class="image-mobile" src="./images/mobile/image-curiosity.jpg" alt="curiosity">
+          <h2>THE CURIOSITY</h2>
+        </div>
+        <div class="grid-image-make-it-fisheye">
+          <img class="image-desktop" src="./images/desktop/image-fisheye.jpg" alt="fisheye">
+          <img class="image-mobile" src="./images/mobile/image-fisheye.jpg" alt="fisheye">
+          <h2>MAKE IT FISHEYE</h2>
+        </div>
+      </div>
+
+      <div class="section-creations-mobile">
+        <input type="button" value="SEE ALL" />
+      </div>
+    </main>
+  </section>
+
+
+  <footer>
+    <div>
+      <img src="./images/logo.svg" alt="logo" />
+      <ul class="footerlist">
+        <li>
+          <p> About</p>
+        </li>
+        <li>
+          <p> Careers</p>
+        </li>
+        <li>
+          <p>Events</p>
+        </li>
+        <li>
+          <p>Products</p>
+        </li>
+        <li>
+          <p> Support</p>
+        </li>
+      </ul>
+
+    </div>
+
+    <div>
+      <div class="footer-contact">
+        <img src="./images/icon-facebook.svg" alt="icon-facebook">
+        <img src="./images/icon-twitter.svg" alt="icon-twitter">
+        <img src="./images/icon-pinterest.svg" alt="icon-pinterest">
+        <img src="./images/icon-instagram.svg" alt="icon-instagram">
+      </div>
+      <p>© 2021 Loopstudios. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+<script>
+  let modal = document.getElementById("myModal");
+  // get the button that open the modal 
+  let btn = document.getElementById("myBtn");
+
+  // get the span element that closes the modal 
+
+  let span = document.getElementsByClassName("close")[0];
+
+  // when the user clicks on the button open the modal 
+
+  btn.onclick = function () {
+    modal.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function () {
+    modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+
+</script>
+
+</html>
